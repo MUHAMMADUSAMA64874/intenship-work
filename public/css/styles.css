@@ -1,0 +1,97 @@
+/* public/css/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header form {
+  margin-top: 10px;
+}
+
+header form input, header form select, header form button {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+header form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+header form button:hover {
+  background-color: #45a049;
+}
+
+main {
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #4CAF50;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #0d8529;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li img {
+  max-width: 100px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+li h3 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+footer {
+  background-color: #797979;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+
+}
+p {
+  color: rgb(3, 3, 3);
+}

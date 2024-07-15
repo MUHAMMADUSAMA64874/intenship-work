@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<main>
+  <h1><%= job.title %></h1>
+  <h2>Company: <%= job.companyId ? job.companyId.name : 'Unknown Company' %></h2>
+  <p>Location: <%= job.location %></p>
+  <h3>Description</h3>
+  <p><%= job.description %></p>
+  <h3>Requirements</h3>
+  <p><%= job.requirements %></p>
+  <% if (job.companyId && job.companyId.logo) { %>
+    <img src="<%= job.companyId.logo %>" alt="<%= job.companyId.name %> Logo">
+  <% } %>
+  <form action="/jobs/apply/<%= job._id %>" method="post">
+    <button type="submit">Apply Now</button>
+  </form>
+</main>
+
+<%- include('../partials/footer') %>

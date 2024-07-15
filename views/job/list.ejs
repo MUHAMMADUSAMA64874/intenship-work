@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<main>
+  <h1>Job Listings</h1>
+  <ul>
+    <% if (jobs.length > 0) { %>
+      <% jobs.forEach(job => { %>
+        <li>
+          <a href="/jobs/<%= job._id %>">
+            <h2><%= job.title %></h2>
+            <p><%= job.companyId ? job.companyId.name : 'Unknown Company' %> - <%= job.location %></p>
+            <p>Category: <%= job.category %></p>
+          </a>
+        </li>
+      <% }) %>
+    <% } else { %>
+      <li>No results found</li>
+    <% } %>
+  </ul>
+</main>
+
+<%- include('../partials/footer') %>
